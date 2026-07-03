@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  background: #080808;
+  color: #f5f0df;
+}
+
+.hero {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(212, 175, 55, 0.18), transparent 35%),
+    linear-gradient(180deg, #111 0%, #050505 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 1100px;
+  width: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  max-width: 1000px;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  box-shadow: 0 20px 80px rgba(0,0,0,0.65);
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 7rem);
+  color: #d4af37;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.tagline {
+  font-size: clamp(1.4rem, 3vw, 2.4rem);
+  margin: 18px 0 8px;
+  color: #ffffff;
+}
+
+.subtagline {
+  font-size: 1.15rem;
+  color: #c9c1a8;
+  margin-bottom: 32px;
+}
+
+.button {
+  display: inline-block;
+  background: #d4af37;
+  color: #080808;
+  text-decoration: none;
+  padding: 15px 28px;
+  border-radius: 999px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.25);
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+h2 {
+  color: #d4af37;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.about p,
+.mission p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: #e0d8c0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+  padding: 28px;
+  border-radius: 16px;
+  min-height: 220px;
+}
+
+.card h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.card p {
+  color: #c9c1a8;
+  line-height: 1.6;
+}
+
+.secondary {
+  margin-top: 18px;
+  background: transparent;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+}
+
+footer {
+  text-align: center;
+  color: #8d856f;
+  padding: 35px 20px;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+}
